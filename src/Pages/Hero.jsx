@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="sm:h-full sm:w-full  h-3/5 w-3/5 flex justify-center">
         <img src="portal.svg" alt="" />
       </div>
-      {init && <Particles id='tsparticles' init={particlesInit} loaded={particlesLoaded} options={particlesConfig} className="z-[-1]" />}
+      {init && <Particles id='tsparticles' init={particlesInit} loaded={particlesLoaded} options={particlesConfig} className="z-[-2]" />}
     </section>
   )
 }

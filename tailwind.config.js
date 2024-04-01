@@ -10,6 +10,13 @@ export default {
         spray: ['"Rubik Spray Paint"'],
         paint: ['"Finger Paint"']
 
+      },
+      dropShadow: {
+        'xl': '0 5px 15px rgba(255, 255, 255, 0.6)',
+        '2xl': [
+            '0 5px 25px rgba(255, 255, 255, 0.7)',
+            '0 45px 65px rgba(0, 0, 0, 0.15)'
+        ]
       }
     },
   },

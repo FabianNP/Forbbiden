@@ -1,21 +1,45 @@
-import Carrousel from "../Components/Carrousel"
+import CarrouselFramer from "../Components/CarrouselFramer"
+import  { useCallback, useEffect, useState } from "react"
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadFull } from "tsparticles"
+import particlesConfig from "./config/particles.json"
+import { Container } from "postcss"
+
 
 const Hero = () => {
+  
+  
+  const [init, setInit] = useState()
+  useEffect(()=>{
+    initParticlesEngine(async (engine) => {
+
+      await loadFull(engine);
+    }).then(() => {
+      setInit(true);
+    })
+  }, [])
+  
+
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine)
+
+  }, [])
+
+  const particlesLoaded = useCallback(async (Container) => {
+
+  }, [])
+
   return (
-    <section className="border-black border-4 h-screen flex flex-col items-center">
+    <section className="h-screen flex flex-col items-center pt-14 sm:pt-10 md:pt-8 xl:pt-0 relative overflow-x-hidden">
       <div className="flex flex-col items-center pt-5">
-        <div className="flex mr-20 select-none">
-          <div className="h-48 w-48 relative">
-            <img src="F.png" alt="F" className="bg-cover h-52 w-52 absolute left-12 bottom-2"/>
-          </div>
-          <h1 className="text-8xl mt-16 text-lime-400 font-spray">orbbiden Zone</h1>
-        </div>
-        <h3 className="text-5xl  mt-8 text-white select-none font-paint">Cruza el portal hacia otra dimension <span className="text-lime-400 text-7xl italic ">!</span></h3>
+        <img src="FZLogo.png" alt="" className="object-cover sm:h-[150px] md:h-[200px] xl:h-auto h-[130px]" />
+        <h3 className="text-2xl sm:text-3xl xl:text-4xl 2xl:text-5xl  mt-8 text-white select-none font-paint">Cruza el portal hacia otra dimension <span className="text-lime-400 text-7xl italic ">!</span></h3>
       </div>
-      <Carrousel />
-      <div className="h-3/5 w-3/5 flex justify-center">
+      <CarrouselFramer />
+      <div className="sm:h-full sm:w-full  h-3/5 w-3/5 flex justify-center">
         <img src="portal.svg" alt="" />
       </div>
+      {init && <Particles id='tsparticles' init={particlesInit} loaded={particlesLoaded} options={particlesConfig} className="z-[-1]" />}
     </section>
   )
 }

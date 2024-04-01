@@ -1,0 +1,30 @@
+.activeHeroCard {
+  background-color: blueviolet;
+  transform: scale(1.1)  translateY(10%);
+}
+
+.inactiveHeroCard {
+  background-color: white;
+}
+
+.hiddenCard {
+
+}
+
+.showCard {
+
+}
+
+.heroCard{
+  
+}
+
+.left {
+  transition: all;
+  transition-duration: 1s;
+  transform: translateX(100% + 20px);
+}
+
+ 
+
+

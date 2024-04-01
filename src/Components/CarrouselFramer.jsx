@@ -51,7 +51,7 @@ const CarrouselFramer = () => {
             key={index}
             src={image}
             alt={image}
-            className="rounded-[12px] sm:w-[550px] md:w-[550px] xl:w-[600px] 2xl:w-[600px] absolute bottom-[270px] sm:bottom-[230px] md:bottom-[200px] xl:bottom-[140px]"
+            className="rounded-[12px] sm:w-[550px] md:w-[550px] xl:w-[600px] 2xl:w-[600px] absolute bottom-[350px] md:bottom-[280px] xl:bottom-[250px]"
             initial="center"
             animate={[positions[positionIndexes[index]]]}
             variants={imageVariants}

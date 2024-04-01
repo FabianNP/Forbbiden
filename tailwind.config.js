@@ -17,6 +17,9 @@ export default {
             '0 5px 25px #bcff6ff8',
             '0 45px 65px rgba(0, 0, 0, 0.15)'
         ]
+      },
+      boxShadow: {
+        md: "0 0 60px -35px rgba(255, 255, 255, 0.6)"
       }
     },
   },

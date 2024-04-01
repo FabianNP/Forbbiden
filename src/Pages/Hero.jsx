@@ -33,7 +33,7 @@ const Hero = () => {
     <section className="h-screen flex flex-col items-center pt-14 sm:pt-10 md:pt-8 xl:pt-0 relative overflow-x-hidden">
       <div className="flex flex-col items-center pt-5">
         <img src="FZLogo.png" alt="" className="object-cover sm:h-[150px] md:h-[200px] xl:h-auto h-[130px]" />
-        <h3 className="text-2xl sm:text-3xl xl:text-4xl 2xl:text-5xl  mt-8 text-white select-none font-paint">Cruza el portal hacia otra dimension <span className="text-lime-400 text-7xl italic ">!</span></h3>
+        
       </div>
       <CarrouselFramer />
       <div className="sm:h-full sm:w-full  h-3/5 w-3/5 flex justify-center">

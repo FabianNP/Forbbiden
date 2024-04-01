@@ -19,7 +19,7 @@ const Navbar = ({active, setActive, isHero}) => {
   const navList = ["Products", "Contacto", "Preguntas"]
 
   return (
-    <motion.sidebar 
+    <motion.div 
       className='flex items-center text-white gap-[25%] flex-col fixed h-screen w-[20%] max-w-[380px] min-w-[280px] ease-in-out border-e-2 border-[#ffffff48] py-10 bg-[#36363641]' 
       initial="hide" 
       variants={navbarVariants} 
@@ -49,7 +49,7 @@ const Navbar = ({active, setActive, isHero}) => {
         className='absolute '
         />
       </button>
-    </motion.sidebar>
+    </motion.div>
   )
 }
 

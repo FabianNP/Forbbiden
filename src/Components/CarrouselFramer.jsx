@@ -1,6 +1,6 @@
 import {motion} from "framer-motion"
 import { heroPhotos } from "../constants"
-import "./carrousel.css"
+import "./css/carrousel.css"
 import { useState } from "react"
 
 const CarrouselFramer = () => {

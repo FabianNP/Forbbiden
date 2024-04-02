@@ -3,8 +3,8 @@ import { motion } from "framer-motion"
 import SpaceCity from "../assets/SpaceCity.jpg"
 import SpaceCity1 from "../assets/SpaceCity1.jpg"
 
-import "./cardFlip.css"
-
+import "./css/cardFlip.css"
+ 
 const CardFlip = () => {
   const [isFlipped, setIsFlipped] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
@@ -17,7 +17,7 @@ const CardFlip = () => {
   }
 
   return (
-    <div className='flex items-center justify-center h-[500px] cursor-pointer relative'>
+    <div className='flex items-center justify-center h-[500px] cursor-pointer relative hover:scale-[1.1] transition-all duration-75'>
       <div className='flip-card w-[330px] h-[450px] rounded-md' onClick={handleFlip}>
         <motion.div 
           className='flip-card-inner w-[100%] h-[100%]'

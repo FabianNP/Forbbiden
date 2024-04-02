@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react"
 import { heroPhotos } from "../constants"
-import "./carrousel.css"
+import "./css/carrousel.css"
 import {Swiper, SwiperSlide} from "swiper/react"
 
 import "swiper/css"

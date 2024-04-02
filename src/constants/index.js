@@ -14,3 +14,9 @@ export const merch = [
   {img: "", img1: "", title: "", title1: "", price: "", price1: ""}, 
   {img: "", img1: "", title: "", title1: "", price: "", price1: ""}, 
 ]
+
+export const questions = [
+  {title: "Entregan en toda la republica?", info: ""}, 
+  {title: "Tienen precio de mayoreo?", info: ""},
+  {title: "Eso es lo menos?", info: ""},
+]

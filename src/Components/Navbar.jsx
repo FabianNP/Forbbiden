@@ -20,7 +20,7 @@ const Navbar = ({active, setActive, isHero}) => {
 
   return (
     <motion.div 
-      className='flex items-center text-white gap-[25%] flex-col fixed h-screen w-[22%] max-w-[380px] min-w-[280px] ease-in-out py-10 bg-[#36363641] z-6' 
+      className='flex items-center text-white gap-[25%] flex-col fixed h-screen w-[22%] max-w-[380px] min-w-[280px] ease-in-out py-10 bg-[#36363641] z-10' 
       initial="hide" 
       variants={navbarVariants} 
       animate={!isHero ? [positions[active]] : {opacity: 0}}

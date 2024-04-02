@@ -19,7 +19,8 @@ export default {
         ]
       },
       boxShadow: {
-        md: "0 0 60px -35px rgba(255, 255, 255, 0.6)"
+        md: "0 0 60px -35px rgba(255, 255, 255, 0.6)",
+        inner: "0 0 10px 5px rgba(255, 255, 255, 0.6)"
       }
     },
   },

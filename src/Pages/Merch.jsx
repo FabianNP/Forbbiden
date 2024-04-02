@@ -12,7 +12,7 @@ const Merch = () => {
         <div></div>
       </div>
       <div className={`w-screen overflow-hidden flex justify-end min-[2180px]:ps-[200px] px-[130px] pe-[0px] 2xl:pe-[100px]`}>
-        <div className={`w-[85%] flex flex-wrap gap-x-28 gap-y-10 justify-center min-[2250px]:justify-start`}>
+        <div className={`w-[80%] flex flex-wrap gap-x-28 gap-y-10 justify-center min-[2250px]:justify-start`}>
         {merch.map((item, index) => {
           return <CardFlip key={index}/>
         })}

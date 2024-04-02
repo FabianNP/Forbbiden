@@ -3,6 +3,8 @@ import Merch from './Pages/Merch'
 import Navbar from './Components/Navbar'
 import Questions from './Pages/Questions'
 import { useEffect, useState, useContext, createContext } from 'react'
+import Contacto from './Pages/Contacto'
+import Footer from './Pages/Footer'
 //import useNavContext from './hooks/useNavContext'
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
         <Hero />
         <Merch active={toggleNavbar} />
         <Questions />
+        <Contacto />
+        <Footer />
       </div>
   )
 }

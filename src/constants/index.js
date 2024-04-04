@@ -20,3 +20,5 @@ export const questions = [
   {title: "Tienen precio de mayoreo?", info: ""},
   {title: "Eso es lo menos?", info: ""},
 ]
+
+export const navList = ["Productos", "Preguntas", "Contacto"]

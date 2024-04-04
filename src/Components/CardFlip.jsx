@@ -17,8 +17,8 @@ const CardFlip = () => {
   }
 
   return (
-    <div className='flex items-center justify-center h-[500px] cursor-pointer relative hover:scale-[1.1] transition-all duration-75'>
-      <div className='flip-card w-[330px] h-[450px] rounded-md' onClick={handleFlip}>
+    <div className='flex items-center justify-center h-[450px] 2xl:h-[500px] cursor-pointer relative hover:scale-[1.1] transition-all duration-75'>
+      <div className='flip-card h-[40vh] w-[20vw] min-[1600px]:w-[25vw] min-[1600px]:h-[45vh] min-w-[300px] max-w-[330px] min-h-[350px] max-h-[450px] rounded-md' onClick={handleFlip}>
         <motion.div 
           className='flip-card-inner w-[100%] h-[100%]'
           initial={false}

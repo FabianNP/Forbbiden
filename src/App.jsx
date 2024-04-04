@@ -2,38 +2,23 @@ import Hero from './Pages/Hero'
 import Merch from './Pages/Merch'
 import Navbar from './Components/Navbar'
 import Questions from './Pages/Questions'
-import { useEffect, useState, useContext, createContext } from 'react'
+// import { useEffect, useState, useContext, createContext } from 'react'
 import Contacto from './Pages/Contacto'
 import Footer from './Pages/Footer'
-//import useNavContext from './hooks/useNavContext'
+import { NavProvider } from './hooks/NavContext'
+// import useNav from './hooks/useNav'
 
 function App() {
-  //  const [state, setNav, setIsHero, Provider] = useNavContext()
-  // const ThemeContext = createContext("light")
-
-  const [toggleNavbar, setToggleNavbar] = useState(false);
-  const [isHero, setIsHero] = useState(true);
-
-  useEffect(() => {
-    const scrollListener = document.addEventListener('scroll', () => {
-      if (window.scrollY > window.innerHeight) {
-        setIsHero(false)
-        setToggleNavbar(true)
-      }
-      else setIsHero(true);
-
-      return () =>  document.removeEventListener("scroll", scrollListener);
-  })}, [])
-
+  // const state = useNav()
   return (
-      <div className='overflow-x-hidden relative'>
-        <Navbar active={toggleNavbar ? 1 : 0} setActive={setToggleNavbar} isHero={isHero}/>
+    <NavProvider className='overflow-x-hidden relative'>
+        <Navbar />
         <Hero />
-        <Merch active={toggleNavbar} />
+        <Merch />
         <Questions />
         <Contacto />
         <Footer />
-      </div>
+    </NavProvider>
   )
 }
 

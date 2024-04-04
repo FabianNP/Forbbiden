@@ -1,8 +1,14 @@
 import React from 'react'
 import {motion} from "framer-motion"
+import { navList } from '../constants'
+import useNav from '../hooks/useNav'
 
 
-const Navbar = ({active, setActive, isHero}) => {
+const Navbar = () => {
+
+  const state = useNav()
+  const {isHero, toggleNavbar} = useNav()
+  console.log(state)
 
   const positions= ["hide", "show"]
 
@@ -16,14 +22,12 @@ const Navbar = ({active, setActive, isHero}) => {
     show: {}
   }
 
-  const navList = ["Productos", "Preguntas", "Contacto"]
-
   return (
     <motion.div 
       className='flex items-center text-white gap-[25%] flex-col fixed h-screen w-[22%] max-w-[380px] min-w-[280px] ease-in-out py-10 bg-[#36363641] z-10' 
       initial="hide" 
       variants={navbarVariants} 
-      animate={!isHero ? [positions[active]] : {opacity: 0}}
+      animate={!isHero ? [positions[toggleNavbar ? 1 : 0]] : {opacity: 0}}
       transition={{duration: 0.4}}
     >
       <div className="w-[80%]">

@@ -12,10 +12,11 @@ export default {
 
       },
       dropShadow: {
-        'xl': '0 5px 15px rgba(255, 255, 255, 0.6)',
+        'lg': ['0 5px 5px rgba(255, 255, 255, 0.3)', '0 15px 25px #1E7B06'],
+        'xl': ['0 5px 15px rgba(255, 255, 255, 0.2)', '0 25px 25px #1E7B06'],
         '2xl': [
-            '0 5px 25px #bcff6ff8',
-            '0 45px 65px rgba(0, 0, 0, 0.15)'
+          '0 5px 5px rgba(255, 255, 255, 0.2)',
+            '0 5px 25px #1E7B06'
         ]
       },
       boxShadow: {

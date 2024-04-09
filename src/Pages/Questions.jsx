@@ -6,7 +6,7 @@ const Questions = () => {
   const [quActive, setQuActive] =  useState(null)
 
   return (
-    <div className='w-screen bg-gradient-to-r from-[#4949499f] to-[#7272729f] mt-20 flex flex-col items-center py-24'>
+    <section id="questions" className='w-screen bg-gradient-to-r from-[#4949499f] to-[#7272729f] mt-20 flex flex-col items-center py-24'>
       <h1 className="text-lime-400 font-paint text-5xl ">Preguntas Frecuentes</h1>
       <div className='flex w-screen justify-end'>
         <div className='sm:w-[80%] mt-20 flex flex-col justify-center gap-12 items-center'>
@@ -15,7 +15,7 @@ const Questions = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

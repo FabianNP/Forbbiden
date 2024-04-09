@@ -12,7 +12,7 @@ const Contacto = () => {
   }
 
   return (
-    <div className="w-screen flex justify-end py-20 pt-32">
+    <section id="contact" className="w-screen flex justify-end py-20 pt-32">
       <div className="w-[80%]"> 
       <div className="flex justify-center gap-10 w-full">
         <motion.div
@@ -50,7 +50,7 @@ const Contacto = () => {
       </div>
         
       </div>
-    </div>
+    </section>
   )
 }
 

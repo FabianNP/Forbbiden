@@ -1,4 +1,4 @@
-import {useState, useContext, createContext, useEffect } from 'react'
+import {useState, createContext, useEffect, useCallback } from 'react'
 
 const NavContext = createContext()
 
@@ -6,7 +6,7 @@ const NavProvider = ({ children }) => {
   
   const [toggleNavbar, setToggleNavbar] = useState(false);
   const [isHero, setIsHero] = useState(true);
-  const [navActive, setNavActive] = useState(0)
+  const [navActive, setNavActive] = useState()
 
   const state = {
     toggleNavbar: toggleNavbar,
@@ -18,19 +18,33 @@ const NavProvider = ({ children }) => {
   }
 
   useEffect(() => {
+    const sectionsArray = [document.getElementById("products"), document.getElementById("questions"), document.getElementById("contact")]
+
+   
+
     const scrollListener = document.addEventListener('scroll', () => {
-      if (window.scrollY > window.innerHeight) {
+      //console.log(sectionsArray[0].getBoundingClientRect().y)
+      //console.log(sectionsArray[1].getBoundingClientRect().y)
+      //console.log(sectionsArray[2].getBoundingClientRect().y)
+      let scrolled = window.scrollY
+      // console.log(scrolled)
+
+      if (scrolled > window.innerHeight -200) {
         setToggleNavbar(true)
         setIsHero(false)
+        
+        // checkNavActive(sectionsArray, scrolled)
+        // console.log(window.scrollY)
       }
       else setIsHero(true);
-      console.log()
 
-      return () =>  document.removeEventListener("scroll", scrollListener);
-  })}, [])
+    })
+    
+
+    return () =>  document.removeEventListener("scroll", scrollListener);
+}, [])
 
 
-  // return [state, setToggleNavbar, setIsHero, NavContext.Provider]
   return (
     <NavContext.Provider value={state}>
       {children}

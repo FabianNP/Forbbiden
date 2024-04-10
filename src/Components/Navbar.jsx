@@ -4,13 +4,14 @@ import { navList } from '../constants'
 import useNav from '../hooks/useNav'
 import { Link } from "react-scroll";
 import ProductsFilter from './ProductsFilter';
+import ShopCar from "./ShopCar"
 
 import "./css/navbar.css"
 
 
 const Navbar = () => {
 
-  const {isHero, toggleNavbar, navActive } = useNav()
+  const {isHero, toggleNavbar, navActive, setCarActive } = useNav()
 
   const positions= ["hide", "show"]
 
@@ -28,6 +29,9 @@ const Navbar = () => {
     window.scrollTo({top: 0,  behavior: "smooth"})
   }
 
+  const handleCar = () => {
+    setCarActive(prev => !prev)
+ }
   return (
     <motion.div 
       className='flex items-center gap-[25%] flex-col fixed h-screen w-[22%] max-w-[380px] min-w-[280px] ease-in-out py-10 bg-[#36363641] z-10' 
@@ -50,9 +54,10 @@ const Navbar = () => {
           )
         })}
       </ul>
-      <div className=' translate-y-[-50px]  w-[25%] cursor-pointer hover:scale-[1.2] transition-all duration-150 ease-in-out'>
+      <div onClick={handleCar} className='z-10 translate-y-[-50px]  w-[25%] cursor-pointer hover:scale-[1.2] transition-all duration-150 ease-in-out '>
         <img src="carrito.png" alt="" className='object-contain bg-[#fffffff8] rounded-full hover:drop-shadow-2xl'/>
       </div>
+      <ShopCar />
       
       {/*}
         <button className='absolute right-[-60px] w-[40px] h-[20px]rounded-full' onClick={() => {

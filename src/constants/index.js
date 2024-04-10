@@ -49,3 +49,10 @@ export const questions = [
 ]
 
 export const navList = [{text: "Productos", id: "products"}, {text: "Preguntas", id: "questions"}, {text: "Contacto", id: "contact"}]
+
+export const carList = [
+  {img: Camisola, title: "", title1: "", price: "600", category: "camisola"},
+  {img: Camisola, title: "", title1: "", price: "600", category: "camisola"},
+  {img: Camisola, title: "", title1: "", price: "600", category: "camisola"},
+  {img: Camisola, title: "", title1: "", price: "600", category: "camisola"}
+]

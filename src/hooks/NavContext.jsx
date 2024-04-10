@@ -6,19 +6,22 @@ const NavProvider = ({ children }) => {
   
   const [toggleNavbar, setToggleNavbar] = useState(false);
   const [isHero, setIsHero] = useState(true);
-  const [navActive, setNavActive] = useState()
+  const [navActive, setNavActive] = useState(false)
+  const [carActive, setCarActive] = useState(false)
 
   const state = {
-    toggleNavbar: toggleNavbar,
-    isHero: isHero,
-    navActive: navActive,
-    setToggleNavbar: setToggleNavbar,
-    setIsHero: setIsHero,
-    setNavActive: setNavActive
+    toggleNavbar,
+    isHero,
+    navActive,
+    carActive,
+    setCarActive,
+    setToggleNavbar,
+    setIsHero,
+    setNavActive
   }
 
   useEffect(() => {
-    const sectionsArray = [document.getElementById("products"), document.getElementById("questions"), document.getElementById("contact")]
+    // const sectionsArray = [document.getElementById("products"), document.getElementById("questions"), document.getElementById("contact")]
 
    
 

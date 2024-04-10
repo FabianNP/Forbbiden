@@ -29,3 +29,18 @@ option {
 optgroup {
   overflow: hidden;
 }
+
+.shop-car-list::-webkit-scrollbar {
+  height: 10px;
+}
+
+.shop-car-list::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f1f1f1;
+}
+
+.shop-car-list::-webkit-scrollbar-thumb {
+  background: #363636;
+  width: 40px;
+  border-radius: 10px;
+}

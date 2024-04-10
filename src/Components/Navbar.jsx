@@ -11,7 +11,7 @@ import "./css/navbar.css"
 
 const Navbar = () => {
 
-  const {isHero, toggleNavbar, navActive, setCarActive } = useNav()
+  const {isHero, toggleNavbar, navActive, setCarActive, carActive } = useNav()
 
   const positions= ["hide", "show"]
 
@@ -54,7 +54,7 @@ const Navbar = () => {
           )
         })}
       </ul>
-      <div onClick={handleCar} className='z-10 translate-y-[-50px]  w-[25%] cursor-pointer hover:scale-[1.2] transition-all duration-150 ease-in-out '>
+      <div onClick={handleCar} className={`z-20 translate-y-[-70px] w-[23%] max-w-[80px] cursor-pointer hover:scale-[1.2] transition-all duration-150 ease-in-out ${carActive ? " hover:scale-[0.9] " : ""}`}>
         <img src="carrito.png" alt="" className='object-contain bg-[#fffffff8] rounded-full hover:drop-shadow-2xl'/>
       </div>
       <ShopCar />

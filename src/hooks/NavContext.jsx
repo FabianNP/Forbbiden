@@ -39,7 +39,10 @@ const NavProvider = ({ children }) => {
         // checkNavActive(sectionsArray, scrolled)
         // console.log(window.scrollY)
       }
-      else setIsHero(true);
+      else{
+        setIsHero(true);
+        setCarActive(false)
+      } 
 
     })
     

@@ -26,20 +26,20 @@ import Demin2 from "../assets/DeminWhiteBlue.jpeg"
 export const heroPhotos = [city, city1, city2, city3, city4]
 
 export const merch = [
-  {img: Camisola, title: "", title1: "", price: "600", category: "camisola"}, 
-  {img: Camisola1, title: "", title1: "", price: "600", category: "camisola"}, 
-  {img: Camisola2, title: "", title1: "", price: "600", category: "camisola"}, 
-  {img: Chaqueta1, title: "", title1: "", price: "600", category: "chaqueta"}, 
-  {img: Chaqueta2, title: "", title1: "", price: "600", category: "chaqueta"}, 
-  {img: Chaqueta3, title: "", title1: "", price: "600", category: "chaqueta"}, 
-  {img: Chaqueta4, title: "", title1: "", price: "600", category: "chaqueta"}, 
-  {img: Chaqueta5, title: "", title1: "", price: "600", category: "chaqueta"}, 
-  {img: Chaqueta6, title: "", title1: "", price: "600", category: "chaqueta"}, 
-  {img: Chaqueta7, title: "", title1: "", price: "600", category: "chaqueta"}, 
-  {img: Chaqueta8, title: "", title1: "", price: "600", category: "chaqueta"}, 
-  {img: Demin, title: "", title1: "", price: "600", category: "demin"}, 
-  {img: Demin1, title: "", title1: "", price: "600", category: "demin"}, 
-  {img: Demin2, title: "", title1: "", price: "600", category: "demin"}
+  {img: Camisola, title: "", title1: "", price: "600", category: "camisola", size: "XL"}, 
+  {img: Camisola1, title: "", title1: "", price: "600", category: "camisola", size: "XL"}, 
+  {img: Camisola2, title: "", title1: "", price: "600", category: "camisola", size: "XL"}, 
+  {img: Chaqueta1, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+  {img: Chaqueta2, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+  {img: Chaqueta3, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+  {img: Chaqueta4, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+  {img: Chaqueta5, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+  {img: Chaqueta6, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+  {img: Chaqueta7, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+  {img: Chaqueta8, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+  {img: Demin, title: "", title1: "", price: "600", category: "demin", size: "XL"}, 
+  {img: Demin1, title: "", title1: "", price: "600", category: "demin", size: "XL"}, 
+  {img: Demin2, title: "", title1: "", price: "600", category: "demin", size: "XL"}
 ]
 
 export const questions = [
@@ -51,8 +51,11 @@ export const questions = [
 export const navList = [{text: "Productos", id: "products"}, {text: "Preguntas", id: "questions"}, {text: "Contacto", id: "contact"}]
 
 export const carList = [
-  {img: Camisola, title: "", title1: "", price: "600", category: "camisola"},
-  {img: Camisola, title: "", title1: "", price: "600", category: "camisola"},
-  {img: Camisola, title: "", title1: "", price: "600", category: "camisola"},
-  {img: Camisola, title: "", title1: "", price: "600", category: "camisola"}
+  {img: Camisola, title: "", title1: "", price: "600", category: "camisola", size: "XL"},
+  {img: Chaqueta4, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+  {img: Chaqueta5, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+  {img: Demin, title: "", title1: "", price: "600", category: "demin", size: "XL"}, 
+  {img: Chaqueta7, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+  {img: Chaqueta1, title: "", title1: "", price: "600", category: "chaqueta", size: "XL"}, 
+
 ]

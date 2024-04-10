@@ -23,12 +23,17 @@ const Merch = () => {
         /* viewport={{ once: true }} */
         
         initial={{opacity: 0,  scale: 0.9, translateX: 900}}
-        className={`w-screen overflow-hidden flex justify-end min-[2180px]:ps-[200px] px-[130px] pt-[25px] pe-[0px] 2xl:pe-[100px]`}>
-        <div className={`w-[80%] flex flex-wrap gap-24 gap-y-10 justify-start`}>
-        {merch.map((item, index) => {
-          /* return <CardFlip key={index}/> */
-          return <Card  key={index} img={item.img} price={item.price}/>
-        })}
+        className={`w-screen flex justify-end min-[2180px]:ps-[300px] pl-[130px] pt-[25px]`}>
+          <div className='w-[22%] max-w-[380px] min-w-[280px]'></div>
+        <div className={` flex justify-center`}>
+          <div className=''>
+            <div className='flex flex-wrap gap-24 gap-y-10'>
+            {merch.map((item, index) => {
+              /* return <CardFlip key={index}/> */
+              return <Card  key={index} img={item.img} price={item.price} size={item.size}/>
+            })}
+            </div>
+          </div>
         </div>
       </motion.div>
     </section>

@@ -16,7 +16,7 @@ export default {
         'xl': ['0 5px 15px rgba(255, 255, 255, 0.2)', '0 25px 25px #1E7B06'],
         '2xl': [
           '0 5px 5px rgba(255, 255, 255, 0.2)',
-            '0 5px 25px #1E7B06'
+            '0 5px 25px #9bd300 '
         ]
       },
       boxShadow: {

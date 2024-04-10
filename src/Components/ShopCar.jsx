@@ -15,15 +15,15 @@ const ShopCar = () => {
 
   return (
     <motion.div  
-      className=' h-[35vh] w-[100%] absolute bottom-0 left-0 bg-gradient-to-r from-[#575757d0] to-[#0f0f0f] rounded-2xl flex justify-end overflow-hidden z-[5]'
+      className=' h-[35vh] w-[100vw] absolute bottom-0 left-0 bg-gradient-to-b  from-[#00000000] to-[#266799] rounded-2xl flex justify-end z-[5]'
       variants={variants}
       initial="hide"
       animate={carActive ? "show" : "hide"}
-      transition={{duration: 0.4, ease: "linear"}}
+      transition={{duration: 0.3, ease: "easeOut"}}
     >
-      <div className='shop-car-list w-[78%] h-[100%] overflow-x-scroll flex gap-14 px-12 items-center'>
+      <div className='overflow-x-scroll overflow-y-hidden w-[78%] flex gap-12 px-12 z-10 pt-[50px] min-[1600px]:pt-[95px] shop-car-list'>
         {carList.map((item, index) => {
-          return <CardCar key={index} img={item.img} price={item.price}/>
+          return <CardCar key={index} img={item.img} price={item.price} size={item.size}/>
         })}
       </div>
     </motion.div>

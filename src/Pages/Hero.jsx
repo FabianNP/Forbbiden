@@ -30,13 +30,13 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className="h-screen flex flex-col items-center pt-14 sm:pt-10 md:pt-8 xl:pt-0 relative overflow-x-hidden">
+    <section className="h-screen flex flex-col items-center pt-14 sm:pt-10 md:pt-8 xl:pt-0 relative overflow-hidden">
       <div className="flex flex-col items-center pt-5">
         <img src="FZLogo.png" alt="" className="object-cover sm:h-[150px] md:h-[200px] xl:h-auto h-[130px] drop-shadow-xl"/>
         
       </div>
       <CarrouselFramer />
-      <div className="sm:h-full sm:w-full  h-3/5 w-3/5 flex justify-center">
+      <div className="w-full h-3/5 md:w-4/5 flex justify-center z-0 absolute bottom-[-10%]">
         <img src="portal.svg" alt="" />
       </div>
       {init && <Particles id='tsparticles' init={particlesInit} loaded={particlesLoaded} options={particlesConfig} className="z-[-2]" />}

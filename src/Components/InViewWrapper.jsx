@@ -5,7 +5,7 @@ import useNav from '../hooks/useNav'
 const InViewWrapper = ({ children, index, threshold, id }) => {
   const { setNavActive } = useNav() 
 
-  const handleView = (inView, ) => {
+  const handleView = (inView) => {
     
     if (index  == undefined) {
       // setNavActive(0)

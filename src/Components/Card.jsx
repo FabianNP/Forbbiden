@@ -4,8 +4,12 @@ import SpaceCity from "../assets/SpaceCity.jpg"
  
 const Card = ({ img, price, size }) => {
 
+  const handleShopCarClick = () => {
+    
+  }
+
   return (
-    <div className='flex items-center justify-center h-[400px] 2xl:h-[500px] relative hover:scale-[1.2] transition-all duration-75'>
+    <div className='flex items-center justify-center h-[400px] 2xl:h-[500px] relative transition-all duration-75'>
       <div className='flip-card h-[30vh] w-[15vw] min-[1600px]:w-[25vw] min-[1600px]:h-[40vh] min-w-[250px] max-w-[300px] min-h-[350px] max-h-[450px] rounded-md'>
         <motion.div 
           className='w-[100%] h-[100%]'
@@ -26,6 +30,9 @@ const Card = ({ img, price, size }) => {
                 <p>${price}</p>
               </div>
             </div>
+          </div>
+          <div className="w-10 h-10 absolute bottom-[-25px] left-4 hover:scale-[1.2] transition-all" onClick={handleShopCarClick}>
+            <img src="./agregar-carrito.png" alt="" />
           </div>
         </motion.div>
       </div>

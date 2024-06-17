@@ -1,11 +1,11 @@
 import { motion } from "framer-motion"
 import SpaceCity from "../assets/SpaceCity.jpg"
 
- 
+  
 const Card = ({ img, price, size }) => {
 
   return (
-    <div className='flex h-[300px] items-center justify-center relative hover:scale-[1.1] transition-all duration-75'>
+    <div className='flex h-[300px] items-center justify-center relative transition-all duration-75'>
       <div className='h-[100%] w-[10%] min-[1600px]:w-[15%] min-[1600px]:h-[40vh] min-w-[250px] rounded-md' >
         <motion.div 
           className='w-[100%] h-[100%]'
@@ -27,10 +27,14 @@ const Card = ({ img, price, size }) => {
               </div>
             </div>
             </div>
+            <div className="w-10 h-10 absolute top-3 right-4 hover:scale-[0.9] transition-all">
+              <img src="./carrito-menos.png" alt="" />
+            </div>
         </motion.div>
       </div>
     </div>
   )
 }
+
 
 export default Card

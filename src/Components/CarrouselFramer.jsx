@@ -51,7 +51,7 @@ const CarrouselFramer = () => {
             key={index}
             src={image}
             alt={image}
-            className="rounded-[12px] sm:w-[550px] md:w-[550px] xl:w-[600px] 2xl:w-[600px] absolute bottom-[350px] md:bottom-[280px] xl:bottom-[250px]"
+            className="rounded-[12px] sm:w-[550px] md:w-[550px] xl:w-[600px] 2xl:w-[600px] absolute bottom-[250px] md:bottom-[220px] xl:bottom-[250px]"
             initial="center"
             animate={[positions[positionIndexes[index]]]}
             variants={imageVariants}
@@ -60,9 +60,9 @@ const CarrouselFramer = () => {
           />
         )
       })}
-      <div className="text-white flex gap-10 justify-center relative h-screen w-[100vw]">
-        <button className="bottom-[33%] z-10 left-20 absolute bg-[#0adb1831] rounded-full  h-14 w-14 py-4 px-6 bg-[url('left-arrow.png')] bg-no-repeat bg-center hover:scale-[1.22] transition-all ease-in" onClick={handleBack}></button>
-        <button className="bottom-[33%] z-10 right-20 absolute bg-[#0adb1831] rounded-full h-14 w-14 py-4 px-6 bg-[url('right-arrow.png')] bg-no-repeat bg-center hover:scale-[1.22] transition-all ease-in" onClick={handleNext}></button>
+      <div className="text-white flex gap-10 justify-center relative h-screen w-[100vw] f ">
+        <button className="bottom-[22%] z-10 left-[40%] sm:left-[41%] md:left-[43%] xl:left-[45%] absolute bg-[#0adb1831] rounded-full  h-12 w-12 sm:h-14 sm:w-14 py-4 bg-[url('left-arrow.png')] bg-[length:50%] bg-no-repeat bg-center hover:scale-[1.22] transition-all ease-in" onClick={handleBack}></button>
+        <button className="bottom-[22%] z-10 right-[40%] sm:right-[41%] md:right-[43%] xl:right-[45%] absolute bg-[#0adb1831] rounded-full h-12 w-12 sm:h-14 sm:w-14 py-4 bg-[url('right-arrow.png')] bg-[length:50%] bg-no-repeat bg-center hover:scale-[1.22] transition-all ease-in" onClick={handleNext}></button>
       </div>
     </div> 
   )

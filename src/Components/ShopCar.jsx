@@ -15,7 +15,7 @@ const ShopCar = () => {
 
   return (
     <motion.div  
-      className=' h-[35vh] w-[100vw] absolute bottom-0 left-0 bg-gradient-to-b  from-[#00000000] to-[#266799] rounded-2xl flex justify-end z-[5]'
+      className=' h-[38vh] w-[100vw] absolute bottom-0 left-0 bg-gradient-to-b  from-[#00000000] to-[#266799] rounded-2xl flex justify-end z-[5]'
       variants={variants}
       initial="hide"
       animate={carActive ? "show" : "hide"}

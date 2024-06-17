@@ -1,4 +1,4 @@
-import {useState, createContext, useEffect, useCallback } from 'react'
+import {useState, createContext, useEffect } from 'react'
 
 const NavContext = createContext()
 

@@ -22,20 +22,15 @@ const NavProvider = ({ children }) => {
 
   useEffect(() => {
     // const sectionsArray = [document.getElementById("products"), document.getElementById("questions"), document.getElementById("contact")]
-
-   
-
     const scrollListener = document.addEventListener('scroll', () => {
       //console.log(sectionsArray[0].getBoundingClientRect().y)
       //console.log(sectionsArray[1].getBoundingClientRect().y)
       //console.log(sectionsArray[2].getBoundingClientRect().y)
       let scrolled = window.scrollY
       // console.log(scrolled)
-
       if (scrolled > window.innerHeight -200) {
         setToggleNavbar(true)
-        setIsHero(false)
-        
+        setIsHero(false)   
         // checkNavActive(sectionsArray, scrolled)
         // console.log(window.scrollY)
       }
@@ -45,11 +40,8 @@ const NavProvider = ({ children }) => {
       } 
 
     })
-    
-
     return () =>  document.removeEventListener("scroll", scrollListener);
 }, [])
-
 
   return (
     <NavContext.Provider value={state}>
